@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html,body{
+background: linear-gradient(#0000005b 100%, #ff0000 0%), url('https://jpsystems.pe/wp-content/uploads/2020/02/7pasosclavesparatuminimarket.png');
+
+background-size: cover;/*para que la imagen no se deforme*/
+background-position: center center;/*siempre este centrada la imagen*/
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+/*contenedor pricipal*/
+.card{
+height: auto;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+border-radius: 2em;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header{
+    margin-top: 1.1em;
+    border-style: none;
+}
+
+.card-footer{
+    border-style: none;
+}
+
+.card-header h3{
+font-size: 1.5em;
+margin-top: 0.5em;
+text-align: center;
+color: white;
+}
+
+/*minimarket*/
+.card-header .logo{
+font-family: 'Poppins';
+text-decoration: none;    
+font-weight: bold;
+font-size: 1.8em;
+text-align: center;
+color: white;
+}
+
+.card-header .logo span{
+    color: #007af3;
+}
+
+/*para los iconos sociales*/
+.social_icon{
+position: absolute;
+text-decoration: none;
+right: 20px;
+top: -45px;
+}
+
+.social_icon span i{
+    color: rgba(255, 255, 255, 0.884);
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #f30000cb;
+color: black;
+border:0 !important;
+border-radius: 1em;
+}
+
+.form-control{
+    border-radius: 1em;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+
+
+.form-check-label {
+    margin-bottom: 0;
+    color: white;
+}
+
+.login_btn{
+color: white;
+background-color: #f30000ad;
+border-radius: 1.5em;
+width: 100px;
+}
+
+.login_btn:hover{
+color: rgb(0, 0, 0);
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+/*para los link */
+.links a{
+margin-left: 4px;
+text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+
+}
+
+.links a:hover{
+    color: #eaefff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #eaefff;
+    font-weight: bold;
+    text-decoration: none;
+}

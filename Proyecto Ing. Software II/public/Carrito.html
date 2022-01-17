@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>CARRITO</title>
+        <!--linkp para el css del carrito-->
+        <link rel="stylesheet" href="./css/StyleCarrito.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<!--link -->
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		
+		<!-- nouislider -->
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet--> 
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i>+51-984584655</a></li> <!--numero de contacto-->
+						<li><a href="#"><i class="fa fa-envelope-o"></i> Minimark@MANOLITO.gob.pe</a></li> <!--correo de la emprez}sa-->
+						<li><a href="#"><i class="fa fa-map-marker"></i> 0015 Las Arenas</a></li> <!--ubicacion-->
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class="fa fa-money"></i> PEN</a></li> <!--monedas-->
+						<li><a href="../LOGIN/HTML/Login.html"><i class="fa fa-user-o"></i> MI CUENTA</a></li> <!--mi cueeta-->
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img src="./img/logo3.png" alt=""><!--CAMBIAR LOGO-->
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0" >Categorias</option><!--caregorias-->
+										<option value="2">Abarrotes</option>
+										<option value="2">Para el hogar</option>
+									</select>
+									<input class="input" placeholder="Busca aquí">
+									<button class="search-btn">Buscar</button> <!--boton buscar-->
+								</form>
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Wishlist -->
+								<div class="lista-deseos">
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Tu lista de deseos</span>
+										<div class="qty">0</div><!--cantidad de elemntos de la lista-->
+									</a>
+								</div>
+								<!-- /Wishlist -->
+
+								<!-- Cart -->
+								<div class="dropdown"><!--aqui va el desplegable del carrito-->
+									<a class="dropdown-toggle" href="Carrito.html">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Tu carrito</span>
+										<div class="qty">1</div><!--cantidad de cosas que hay en el carrito-->
+									</a>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#">Las mejores ofertas</a></li>
+						<li><a href="TiandaCategorias.html">Categorias</a></li>
+						<li><a href="#">Licores</a></li>
+						<li><a href="#">Concervas</a></li>
+						<li><a href="#">Lacteos</a></li>
+						<li><a href="#">Accesorios</a></li>
+						<li><a href="#">Limpieza</a></li>
+						<li><a href="#">Confiteria/Dulceria</a></li>
+						<li><a href="#">OTROS PRODUCTOS:</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+        <!--#######################-->
+        <!--aqui va los datos del carrito-->
+        
+
+        <section class="shopping-cart">
+            <div class="container">
+                <h1 class="text-center">CARRITO</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shopping-cart-header">
+                            <h6>Producto</h6>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="shopping-cart-header">
+                            <h6 class="text-truncate">Precio</h6>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="shopping-cart-header">
+                            <h6>Cantidad</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- ? START SHOPPING CART ITEMS -->
+                <div class="shopping-cart-items shoppingCartItemsContainer">
+                    <!-- MOCKUP EXAMPLE (DELETE) -->
+                    <div class="row shoppingCartItem">
+                        <div class="col-6">
+                            <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                                <img src='./img/ACEITE-COCINERO.png' class="shopping-cart-image">
+                                <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">Aceite cosineeo
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                                <p class="item-price mb-0 shoppingCartItemPrice">S/6.99</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div
+                                class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                                    value="1">
+                                <button class="btn btn-danger buttonDelete" type="button">X</button>
+                            </div>
+                        </div>
+                    </div>
+					<div class="row shoppingCartItem">
+                        <div class="col-6">
+                            <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                                <img src='./img/Producto14.jpg' class="shopping-cart-image">
+                                <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">Mantequilla manti
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                                <p class="item-price mb-0 shoppingCartItemPrice">S/5.00</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div
+                                class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                                    value="1">
+                                <button class="btn btn-danger buttonDelete" type="button">X</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END MOCKUP EXAMPLE -->
+                </div>
+                <!-- ? END SHOPPING CART ITEMS -->
+    
+                <!-- START TOTAL -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="shopping-cart-total d-flex align-items-center">
+                            <p class="mb-0">Total</p>
+                            <p class="ml-4 mb-0 shoppingCartTotal">S/0.00</p>
+                            <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                data-delay="2000">
+                                <div class="toast-header">
+                                    <span>✅</span>
+                                    <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="toast-body text-white">
+                                    Se aumentó correctamente la cantidad
+                                </div>
+                            </div>
+							<a class="btn btn-success ml-auto comprarButton" type="button" href="Delivery.html">Comprar</a>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- END TOTAL -->
+    
+                <!-- START MODAL COMPRA -->
+                <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Pronto recibirá su pedido</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MODAL COMPRA -->
+    
+    
+            </div>
+    
+        </section>
+        <!--#########################################################-->
+		
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Regístrese para el <strong>BOLETIN INFORMATIVO</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Ingresa tu Email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Suscribir</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-pinterest"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Sobre nosotros</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>0015 Las Arenas</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+51-984584655</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>Minimark@MANOLITO.gob.pe</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Categorias</h3>
+								<ul class="footer-links">
+									<li><a href="#">Las mejores ofertas</a></li>
+									<li><a href="#">Abarrotes</a></li>
+									<li><a href="#">Articulos de limpieza</a></li>
+									<li><a href="#">Articulos para el Hogar</a></li>
+									<li><a href="#">Articulos para el seo Personal</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Informacion</h3>
+								<ul class="footer-links">
+									<li><a href="#">Sobre nosotros</a></li>
+									<li><a href="#">Contacta con nosotros</a></li>
+									<li><a href="#">Política de privacidad</a></li>
+									<li><a href="#">Pedidos y Devoluciones</a></li>
+									<li><a href="#">Términos y condiciones</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Servicios</h3>
+								<ul class="footer-links">
+									<li><a href="../LOGIN/HTML/Login.html">Mi cuenta</a></li>
+									<li><a href="#">Ver carrito</a></li>
+									<li><a href="#">Lista de deseos</a></li>
+									<li><a href="#">Seguimiento de mi pedido</a></li>
+									<li><a href="#">Ayuda</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+			<!-- bottom footer -->
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+							</ul>
+							<span class="copyright">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Este trabajo esta hecho  <i class="fa fa-heart-o" aria-hidden="true"></i> por el equipo <a href="#" >DINAMITA</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+						</div>
+					</div>
+						<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /bottom footer -->
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<!--link para el scrip del carrito-->
+		<script src="./js/CarritoPrueba.js"></script>
+
+        <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+	<!--para la funccionalidad del carrito-->
+	<script src="js/CarritoPrueba.js"></script>
+	</body>
+</html>

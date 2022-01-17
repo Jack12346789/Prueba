@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>delibery</title>
+
+ 		<!-- Google font -->
+ 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+ 		<!-- Bootstrap -->
+ 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+ 		<!-- Slick -->
+ 		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+ 		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+ 		<!-- nouislider -->
+ 		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+ 		<!-- Font Awesome Icon -->
+ 		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+ 		<!-- Custom stlylesheet -->
+ 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i>+51-984584655</a></li> <!--numero de contacto-->
+						<li><a href="#"><i class="fa fa-envelope-o"></i> Minimark@MANOLITO.gob.pe</a></li> <!--correo de la emprez}sa-->
+						<li><a href="#"><i class="fa fa-map-marker"></i> 0015 Las Arenas</a></li> <!--ubicacion-->
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class="fa fa-money"></i> PEN</a></li> <!--monedas-->
+						<li><a href="../LOGIN/HTML/Login.html"><i class="fa fa-user-o"></i> MI CUENTA</a></li> <!--mi cueeta-->
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img src="./img/logo3.png" alt=""><!--CAMBIAR LOGO-->
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0">Categorias</option><!--caregorias-->
+										<option value="2">Abarrotes</option>
+										<option value="2">Para el hogar</option>
+									</select>
+									<input class="input busca-aqui" placeholder="Busca aquí">
+									<button class="search-btn">Buscar</button> <!--boton buscar-->
+								</form>
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Wishlist -->
+								<div class="lista-deseos">
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Tu lista de deseos</span>
+										<div class="qty">0</div><!--cantidad de elemntos de la lista-->
+									</a>
+								</div>
+								<!-- /Wishlist -->
+
+								<!-- Cart -->
+								<div class="dropdown carrito"><!--aqui va el desplegable del carrito-->
+									<a class="dropdown-toggle" href="Carrito.html">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Tu carrito</span>
+										<div class="qty">1</div><!--cantidad de cosas que hay en el carrito-->
+									</a>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#">Las mejores ofertas</a></li>
+						<li><a href="TiandaCategorias.html">Categorias</a></li>
+						<li><a href="#">Licores</a></li>
+						<li><a href="#">Concervas</a></li>
+						<li><a href="#">Lacteos</a></li>
+						<li><a href="#">Accesorios</a></li>
+						<li><a href="#">Limpieza</a></li>
+						<li><a href="#">Confiteria/Dulceria</a></li>
+						<li><a href="#">OTROS PRODUCTOS:</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="breadcrumb-header">Verificar</h3>
+						<ul class="breadcrumb-tree">
+							<li><a href="index.html">Home</a></li>
+							<li class="active">Verificar</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<div class="col-md-7">
+						<!-- Billing Details -->
+						<div class="billing-details">
+							<div class="section-title">
+								<h3 class="title">Dirección de Envio</h3>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="first-name" placeholder="Primer nombre">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="last-name" placeholder="Apellido">
+							</div>
+							<div class="form-group">
+								<input class="input" type="email" name="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="address" placeholder="Dirección">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="city" placeholder="Ciudad">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="zip-code"placeholder="Código postal">
+							</div>
+							<div class="form-group">
+								<input class="input" type="tel" name="tel" placeholder="Telefono">
+							</div>
+						</div>
+						<!-- /Billing Details -->
+
+						<!-- Shiping Details -->
+						<div class="shiping-details">
+							<div class="section-title">
+								<h3 class="title">Otra dirección de envío</h3>
+							</div>
+							<div class="input-checkbox">
+								<input type="checkbox" id="shiping-address">
+								<label for="shiping-address">
+									<span></span>
+									¿Enviar a una dirección diferente?
+								</label>
+								<div class="caption">
+									<div class="form-group">
+										<input class="input" type="text" name="first-name" placeholder="Primer nombre">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="last-name" placeholder="Apellido">
+									</div>
+									<div class="form-group">
+										<input class="input" type="email" name="email" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="address" placeholder="Dirección">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="city" placeholder="Ciudad">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="zip-code"placeholder="Código postal">
+									</div>
+									<div class="form-group">
+										<input class="input" type="tel" name="tel" placeholder="Telefono">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Shiping Details -->
+
+						<!-- Order notes -->
+						<div class="order-notes">
+							<textarea class="input" placeholder="notas de pedido opcional"></textarea>
+						</div>
+						<!-- /Order notes -->
+					</div>
+
+					<!-- Order Details -->
+					<div class="col-md-5 order-details">
+						<div class="section-title text-center">
+							<h3 class="title">Su pedido</h3>
+						</div>
+						<div class="order-summary">
+							<div class="order-col">
+								<div><strong>PRODUCTO</strong></div>
+								<div><strong>TOTAL</strong></div>
+							</div>
+							<!--ESTO SE CANBIARA PARA QUE TRABAJE CON LA BASE DE DATOS-->
+							<div class="order-products">
+								<div class="order-col">
+									<div>1x El nombre del producto va aquí</div>
+									<div>S/0.00</div>
+								</div>
+								<div class="order-col">
+									<div>2x El nombre del producto va aquí</div>
+									<div>S/0.00</div>
+								</div>
+							</div>
+							<div class="order-col">
+								<div>Envío</div>
+								<div><strong>GRATIS</strong></div>
+							</div>
+							<div class="order-col">
+								<div><strong>TOTAL</strong></div>
+								<div><strong class="order-total">S/0.00</strong></div>
+							</div>
+						</div>
+						<div class="payment-method">
+							<!--
+							<div class="input-radio">
+								<input type="radio" name="payment" id="payment-1">
+								<label for="payment-1">
+									<span></span>
+									Transferencia bancaria directa
+								</label>
+								<div class="caption">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>-->
+							<div class="input-radio">
+								<input type="radio" name="payment" id="payment-2">
+								<label for="payment-2">
+									<span></span>
+									Pago con cheque
+								</label>
+								<div class="caption">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<div class="input-radio">
+								<input type="radio" name="payment" id="payment-3">
+								<label for="payment-3">
+									<span></span>
+									Paypal
+								</label>
+								<div class="caption">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<!--AGREGADO POR MI-->
+							<div class="input-radio">
+								<input type="radio" name="payment" id="payment-4">
+								<label for="payment-4">
+									<span></span>
+									BCP
+								</label>
+								<div class="caption">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+
+							<div class="input-radio">
+								<input type="radio" name="payment" id="payment-5">
+								<label for="payment-5">
+									<span></span>
+									Interback
+								</label>
+								<div class="caption">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+						<div class="input-checkbox">
+							<input type="checkbox" id="terms">
+							<label for="terms">
+								<span></span>
+								He leído y acepto los <a href="#">términos y condiciones.</a>
+							</label>
+						</div>
+						<a href="#" class="primary-btn order-submit" >Realizar pedido</a>
+					</div>
+					<!-- /Order Details -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Regístrese para el <strong>BOLETIN INFORMATIVO</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Ingresa tu Email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Suscribir</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-pinterest"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+		<!-- Pie de pagina -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Sobre nosotros</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>0015 Las Arenas</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+51-984584655</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>Minimark@MANOLITO.gob.pe</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Categorias</h3>
+								<ul class="footer-links">
+									<li><a href="#">Las mejores ofertas</a></li>
+									<li><a href="#">Abarrotes</a></li>
+									<li><a href="#">Articulos de limpieza</a></li>
+									<li><a href="#">Articulos para el Hogar</a></li>
+									<li><a href="#">Articulos para el seo Personal</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Informacion</h3>
+								<ul class="footer-links">
+									<li><a href="#">Sobre nosotros</a></li>
+									<li><a href="#">Contacta con nosotros</a></li>
+									<li><a href="#">Política de privacidad</a></li>
+									<li><a href="#">Pedidos y Devoluciones</a></li>
+									<li><a href="#">Términos y condiciones</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Servicios</h3>
+								<ul class="footer-links">
+									<li><a href="../LOGIN/HTML/Login.html">Mi cuenta</a></li>
+									<li><a href="#">Ver carrito</a></li>
+									<li><a href="#">Lista de deseos</a></li>
+									<li><a href="#">Seguimiento de mi pedido</a></li>
+									<li><a href="#">Ayuda</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+			<!-- bottom footer -->
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+							</ul>
+							<span class="copyright">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Este trabajo esta hecho  <i class="fa fa-heart-o" aria-hidden="true"></i> por el equipo <a href="#" >DINAMITA</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+						</div>
+					</div>
+						<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /bottom footer -->
+		</footer>
+		<!-- /Pie de pagina -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
